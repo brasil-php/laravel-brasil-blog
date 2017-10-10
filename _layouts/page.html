@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="page-header clear-filter" style="height: 69vh;" filter-color="blue">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}'); transform: translate3d(0px, 0px, 0px);">
+    </div>
+    <div class="container">
+        <div class="content-center brand">
+            <img class="n-logo" src="{{ site.logo }}" height="111px" alt="">
+            <p>
+                <h4>{{ page.description }}</h4>
+                <div class="separator separator-primary"></div>
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="section section-about-us">
+    <div class="container">
+        <div class="row">
+            <div class="section-story-overview col-md-9">
+                {{ content }}
+            </div>
+            <div class="col-md-3" style="background: #efefef; padding-top: 50px">
+                <h3>Parceiros</h3>
+                <h4><a href="http://www.phptherightway.com/" target="_blank">+ PHP: The Right Way</a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
